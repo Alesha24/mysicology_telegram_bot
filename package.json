@@ -1,0 +1,17 @@
+{
+    "name": "musicology_bot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "musicology.js",
+    "scripts": {
+        "start": "node musicology.js"
+    },
+    "engines": {
+        "node": "8.11.1"
+    },
+    "author": "leshaber24@yandex.ru",
+    "license": "ISC",
+    "dependencies": {
+        "node-telegram-bot-api": "^0.30.0"
+    }
+}
