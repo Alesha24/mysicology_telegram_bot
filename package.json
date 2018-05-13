@@ -7,7 +7,8 @@
         "start": "node musicology.js"
     },
     "engines": {
-        "node": "8.11.1"
+        "node": "8.11.1",
+        "npm": "5.7.1"
     },
     "author": "leshaber24@yandex.ru",
     "license": "ISC",
