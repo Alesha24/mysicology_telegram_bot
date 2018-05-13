@@ -1,1 +1,1 @@
-web: node musicoligy.js
+web: node musicology.js
