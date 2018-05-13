@@ -1,1 +1,1 @@
-web: node musicology.js
+worker: node musicology.js
