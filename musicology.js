@@ -7,7 +7,7 @@ http.createServer(function (req, res) {
     res.send('it is running\n');
 }).listen(process.env.PORT || 5000);
 
-var token = '585154658:AAEuYv4NXwZ1YS_M3Gf-bj-BoT6BolT5VPw';
+//var token = '585154658:AAEuYv4NXwZ1YS_M3Gf-bj-BoT6BolT5VPw';
 var bot = new TelegramBot(token, {
     polling: true
 });
