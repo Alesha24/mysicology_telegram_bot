@@ -1,3 +1,4 @@
+
 var TelegramBot = require('node-telegram-bot-api');
 var http = require('http');
 http.createServer(function (req, res) {
@@ -35,7 +36,11 @@ var rand = function () {
 bot.on('message', (msg) => {
     var electro = "electro";
     if (msg.text.toString().toLowerCase().indexOf(electro) === 0) {
-        console.log(count += 1);
+        bot.sendMessage {
+        "reply_markup": {
+            "keyboard": ["Continue with electro", "Back to choose style"]
+        }
+        //console.log(count += 1);
         bot.sendMessage(msg.chat.id, "Here is your electro song " + msg.from.first_name);
         bot.sendMessage(msg.chat.id, electro_collection[rand()]);
     }
