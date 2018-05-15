@@ -36,10 +36,11 @@ var rand = function () {
 bot.on('message', (msg) => {
     var electro = "electro";
     if (msg.text.toString().toLowerCase().indexOf(electro) === 0) {
-        bot.sendMessage {
+        bot.sendMessage(msg.chat.id, {
         "reply_markup": {
             "keyboard": ["Continue with electro", "Back to choose style"]
         }
+        });
         //console.log(count += 1);
         bot.sendMessage(msg.chat.id, "Here is your electro song " + msg.from.first_name);
         bot.sendMessage(msg.chat.id, electro_collection[rand()]);
