@@ -54,7 +54,7 @@ bot.on('message', (msg) => {
     if (msg.text.toString().toLowerCase().indexOf(electro) === 0) {
         bot.sendMessage(msg.chat.id, "There is your electro song:" + msg.from.first_name + electro_collection[rand], {
             "reply_markup": {
-                "keyboard": [["Back to choose styles"], ["More from electro"]]
+                "keyboard": ["Back to choose styles"], ["More from electro"]
             }
         });
     }
